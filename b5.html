@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rwed</title>
+</head>
+<body>
+<script>
+    let all = prompt('Nhập chuỗi 1 đi bbi')
+    let all1 = prompt('Nhập chuỗi 2 mauuuu')
+    let arr = [
+        all.split(''),
+        all1.split('')
+    ]
+    let check = true
+    if (arr[0].length !== arr[1].length) {
+        check = false
+    } else {
+        for (let i = 0; i < arr[1].length; i++) {
+            if (arr[0][i] !== arr[1][i]) {
+                check = false
+                break
+            }
+        }
+    }
+    if (check===true) {
+        alert('Hai chuỗi bạn nhập vào giống như hai giọt nước')
+    } else {
+        alert('Ôi cậu bạn khù khờ của tôi ơi hai chuỗi này khác nhau rồi')
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [200, 0, 153, 140, 0, 174, 123]
+    for (let i = 0; i < arr.length - 1; i++) {
+        if (arr[i] === 0) continue
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[j] === 0) continue
+            if (arr[i] > arr[j]) {
+                let b = arr[i]
+                arr[i] = arr[j]
+                arr[j] = b
+            }
+        }
+    }
+    alert(arr)
+</script>
+</body>
+</html>
